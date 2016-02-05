@@ -9,7 +9,16 @@ body
     text-align: center;
 }
 
-#num
+#num,#rate
 {
     color:#ff00ff;
+}
+
+#result{
+    color:#ff0000;
+    font-size:50px;
+}
+#my-result,#computer-result{
+    height:133px;
+    width:133px;
 }

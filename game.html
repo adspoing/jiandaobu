@@ -3,7 +3,6 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <!--<script src="game.js"></script>-->
     <style type="text/css">
   @import "styles/game.css";
     </style>
@@ -14,20 +13,25 @@
     点击开始游戏出拳
     </div>
     <div>
-        您已获胜<span id="num"><strong> 0 </strong></span>次.
+        您已获胜<span id="num"><strong> 0 </strong></span>次.胜率<span id="rate"><strong> 0 </strong></span>%
     </div>
     <div>
         <img id="jiandao" src="assets/jiandao.png">
         <img id="shitou" src="assets/shitou.png">
         <img id="bu" src="assets/bu.png">
     </div>
+    <div>
+        <span>玩家</span>
+        <img id="my-result">
+        <span>电脑</span>
+        <img id="computer-result">
+    </div>
 
-    <img id="my-result" height="133px">
-    <span></span>
-    <img id="computer-result" height="133px">
     <br>
     <button onclick="start()" >开始游戏</button>
-
+    <button onclick="clean()">重置</button>
+    <div>点击开始游戏以后,点击上面的图像出拳</div>
+    <span id="result"><strong></strong></span>
 </div>
 
 <script type="text/javascript" src="scripts/game.js">
